@@ -1,0 +1,41 @@
+[book]
+authors = ["Jonas Malassa"]
+language = "de"
+multilingual = false
+src = "src"
+title = "Micropython Course"
+
+
+[preprocessor.admonish]
+command = "mdbook-admonish"
+assets_version = "3.0.2" # do not edit: managed by `mdbook-admonish install`
+
+[preprocessor.admonish.renderer.test]
+render_mode = "strip"
+
+[preprocessor.admonish.directive.custom.task]
+icon = "./task.svg"
+color = "#900C3F"
+aliases = ["todo", "do"]
+
+[preprocessor.admonish.directive.custom.solution]
+icon = "./task.svg"
+color = "#DAF7A6"
+aliases = ["sol", "lsg"]
+collapsible = true
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
+
+[preprocessor.katex]
+after = ["links"]
+
+[output]
+
+[output.html]
+additional-css = ["custom.css", "./mdbook-admonish.css", "./admonish-custom.css"]
+additional-js = ["mermaid.min.js", "mermaid-init.js"]
+
+[output.html.code.hidelines]
+python = "!"
+py = "!"

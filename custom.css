@@ -1,0 +1,13 @@
+img[alt="LED"] {
+    width: 600px;
+}
+
+.todo {
+    padding: 10px;
+    background-color: #ffcc00;
+    border-radius: 10px;
+    color: #333;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
