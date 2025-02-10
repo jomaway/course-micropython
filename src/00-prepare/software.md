@@ -14,7 +14,7 @@ Mitlerweile gibt es eine große Anzahl an Microcontrollern, auf denen Micropytho
 
 Um die Verwendung von Micropython zu vereinfachen nutzen wir in diesem Kurs die IDE Thonny.
 
-## Thonny
+## Thonny IDE
 
 [Thonny](https://thonny.org/) ist eine Python IDE für Beginner, welche es sehr einfach macht einen Microcontroller mit Micropython zu programmieren.
 
@@ -28,4 +28,10 @@ Jedoch werden alle Beispiele in diesem Kurs mit Thonny gezeigt.
 ```
 
 
-## Wokwi
+## Wokwi – MicroPython im Browser ausprobieren  
+
+[Wokwi](https://wokwi.com) ist eine webbasierte Simulationsplattform für Mikrocontroller-Projekte. Damit kannst du ganz ohne zusätzliche Hardware MicroPython auf virtuellen Boards wie dem ESP32 oder Raspberry Pi Pico testen. Wokwi bietet dir die Möglichkeit, Schaltungen zu erstellen und deine MicroPython-Skripte direkt im Browser auszuführen. Einfach Board auswählen, Schaltkreis designen und deinen Code testen – ideal für schnelle Experimente oder das Lernen ohne physische Hardware.
+
+~~~admonish task
+Gehe auf die wokwi webseite und schaue dir einige Beispielprojekte an.
+~~~
