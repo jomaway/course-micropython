@@ -17,6 +17,10 @@ Dies bedeutet:
 - Werden Code Beispiele gezeigt, sollen Sie diese auch ausführen.
 - ...
 
+~~~admonish info
+Um die Videos anzuschauen müssen Sie sich mit ihrem MS365 account anmelden.
+~~~
+
 ### Code Beispiele
 
 Viele Labs enthalten Code Beispiele wie zum Beispiel den folgenden.

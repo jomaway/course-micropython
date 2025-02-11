@@ -19,11 +19,26 @@
 
 ### REPL
 
-Wie auf dem PC auch können Sie die REPL nutzen um python code auszuführen.
+Wie im letzten Video bereits kurz gezeigt, können Sie die REPL nutzen um micropython code auf ihrem esp32 auszuführen.
+Dies eignet sich vorallem wenn Sie z.B.  eine Funktion testen wollen.
 
-<div class="todo">
-    !todo Video
-</div>
+
+### Scripts
+
+Wenn Sie Micropython installiert haben, sehen Sie unter Dateien bereits eine Datei `boot.py`. 
+Diese Datei wird nach dem Booten des ESP32 als erstes ausgeführt. 
+Das kann z.B dazu genutzt werden, um sich mit einem WLAN-Netz zu verbinden.
+
+Die Datei `main.py` wird, falls vorhanden, direkt nach der `boot.py` aufgerufen und sollte das Hautprogramm beinhalten.
+Dies ermöglicht, dass auch nach einem Reset ihr Python Programm wieder zu laufen beginnt.
+
+Sie können natürlich weiterhin nach belieben andere Module einbinden.
+
+~~~admonish tip
+In die `boot.py` sollten Sie **nicht** ihr Hauptprogramm einfügen. 
+Dafür ist die Datei `main.py` gedacht. 
+~~~
+
 
 Editiern Sie die beiden Dateien `main.py` und `boot.py` folgendermaßen.
 
@@ -37,14 +52,9 @@ print("Hello from main.py")
 print("Hello from boot.py")
 ```
 
-
 ~~~admonish task
-- Starten Sie zuerst die Datei `boot.py`
-- Starten Sie anschließend die Datei `main.py`
-
-Was stellen Sie fest? Was bedeutet das für die Entwicklung mit Micropython?
+- Starten Sie den ESP32 neu, indem Sie die Reset (RST)-Taste drücken.
 ~~~
-
 
 ## Take a break
 
@@ -54,7 +64,17 @@ Was stellen Sie fest? Was bedeutet das für die Entwicklung mit Micropython?
 
 ~~~admonish task
 Kopieren Sie diesen Code in die `main.py` und führen Sie ihn aus.
+
+- Welche Zeitspanne liegt zwischen der ersten und zweiten Ausgabe?
+- Ändern Sie das Beispiel so ab, dass die Zeitspanne halbiert/verdoppelt wird.
 ~~~
+
+~~~admonish solution
+Die Funktion `time.sleep(1)` lässt den Microcontroller für 1 Sekunde pausieren.
+- `time.sleep(0.5)` -> 500ms
+- `time.sleep(2)`-> 2s
+~~~
+
 
 ## Ressources
 
