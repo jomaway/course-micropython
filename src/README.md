@@ -33,5 +33,4 @@ Bei Fragen, Vorschlägen oder Kritik wenden Sie sich bitte an ...
 Hier finden Sie verschiedene Links zum Thema Mircopython, welche Sie als zusätzliche Quellen nutzen können.
 
 - [micropython documentation](https://docs.micropython.org/en/latest/esp32/tutorial/intro.html)
-- [micropython for kids](https://www.coderdojotc.org/micropython/motors/02-transistor/)
 - [Intro to Micropython (Realpython)](https://realpython.com/micropython/)
