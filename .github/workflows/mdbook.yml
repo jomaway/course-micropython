@@ -39,7 +39,7 @@ jobs:
           key: cargo-bin-${{ runner.os }}-${{ hashFiles('**/Cargo.lock') }}
           restore-keys: |
             cargo-bin-${{ runner.os }}-
-          paths: |
+          path: |
             ~/.cargo/bin
             ~/.cargo/registry
             ~/.cargo/git
