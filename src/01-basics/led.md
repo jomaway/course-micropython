@@ -10,7 +10,6 @@ Dieses Lab zeigt Ihnen wie sie eine LED mit dem Microcontroller blinken lassen k
 
 - [ ] LED mit MCU verbinden.
 - [ ] Blockierendes Blinken einer LED
-- [ ] Nicht blockierendes Blinken einer LED
 
 
 ## Die LED
@@ -75,66 +74,7 @@ while True:
 ```
 ~~~
 
-Wir wollen nun mehrere LEDs in unterschiedlicher Geschwindigkeit blinken lassen, dazu wollen wir die Funktionalität zunächst in eine eigene Funktion namens `blink` kapseln.
-Das könnte zum Beispiel so aussehen.
 
-```python
-import time
-from machine import Pin
-
-def blink(led, delay_time):
-  led.value(not led.value())
-  time.sleep(delay_time)
-
-led_pin = Pin(16, Pin.OUT)
-
-while True:
-  blink(led_pin, 0.5)
-```
-
-~~~admonish task
-Fügen Sie eine weitere LED hinzu die im Takt von 700ms blinken soll. -> `blink(led2, 0.7)`
-
-Welche Beobachtung können Sie machen?
-~~~
-
-
-~~~admonish solution
-```python
-import time
-from machine import Pin
-
-def blink(led, delay_time):
-  led.value(not led.value())
-  time.sleep(delay_time)
-
-led_pin = Pin(16, Pin.OUT)
-led2_pin = Pin(17, Pin.OUT)
-
-while True:
-  blink(led_pin, 0.5)
-  blink(led2_pin, 0.7)
-```
-~~~
-
-~~~admonish warning collapsible=true title="Beobachtung"
-Wie sie vlt festgestellt haben blinken die beiden LEDs hintereinander anstatt parallel, dies liegt daran dass die Funktion `sleep` die MCU daran hindert in dieser Zeit weiter zu arbeiten. Man spricht hier auch von einer **blockierenden** Funktion.
-~~~
-
-## Nicht blockierendes Blinken einer LED
-
-
-Probieren Sie anstatt dessen folgendes Programm
-
-```python
-{{#include code/led_blink_nb.py}}
-```
-
-~~~admonish task title="Task (Abgabe)"
-Beschreiben Sie in eigenen Worten wie das Programm funktioniert und warum dies nicht blockierend ist.
-~~~
-
-*Hinweis:* eine weitere Möglichkeit für eine nicht blockierende Lösung sehen Sie im Lab [Timers](timers.md).
 
 
 ## Kontrollfragen
@@ -144,13 +84,10 @@ Beschreiben Sie in eigenen Worten wie das Programm funktioniert und warum dies n
 1. Wie groß sollten Sie den Vorwiderstand mindestens wählen?
 1. Wie können Sie eine LED mit Micropython anschalten?
 1. Wie können Sie eine LED mit Micropython blinken lassen?
-1. Welches Problem kann sich durch die Verwendung von `sleep` zum blinken ergeben?
-1. Was versteht man unter dem Begriff **blockierende Funktion**?
-1. Welchen Wert gibt die Funktion `time.tick_ms()` zurück.
-1. Mit welcher Funktion können Sie berechnen wie viel Zeit seit einem gemessenen Zeitpunkt vergangen ist?
 
 
 ## Übungsaufgaben
 
 1. Lassen Sie die LED abwechselnd 3x blinken und anschließend für 3s leuchten.
-1. Erstellen Sie eine Klasse LED, mit den Methoden `on`, `off` und `blink`.
+1. Erstellen Sie eine Ampelschaltung, welche die 3 LEDs in der richtigen Abfolge leuchten lässt.
+1. Erstellen Sie eine Klasse LED, mit den Methoden `on`, `off` und `toggle`.

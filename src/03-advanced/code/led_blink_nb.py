@@ -1,8 +1,8 @@
 from machine import Pin
 import time
 
-led1_pin = Pin(16, Pin.OUT)
-led2_pin = Pin(17, Pin.OUT)
+led1_pin = Pin(18, Pin.OUT)
+led2_pin = Pin(19, Pin.OUT)
 
 last_ticks_led1 = 0
 last_ticks_led2 = 0

@@ -31,6 +31,7 @@
 
 # Module 3 - Advanced Micropython
 
+- [Nicht blockierendes blinken](./03-advanced/blink-nb.md)
 - [Taster entprellen](./03-advanced/debounce.md)
 - [Interrupts](./03-advanced/irq.md)
 - [Timers](./03-advanced/timers.md)
@@ -42,4 +43,3 @@
   - [WIFI](./03-advanced/wifi.md)
   - [BLE](./03-advanced/ble.md)
   - [ESP NOW](./03-advanced/esp-now.md)
-
