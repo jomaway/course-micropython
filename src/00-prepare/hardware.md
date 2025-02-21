@@ -4,6 +4,7 @@ Der ESP32 ist ein günstiger (~10€) Microcontroller mit integriertem Wifi und 
 
 Den ESP32 gibt es in verschiedenen Ausführungen. Für diesen Kurs verwenden wir ein ESP32 DevBoard Kit oder alternativ ESP32 NodeMCU.
 
+![ESP32 DevKit](./assets/ESP32-DevKitC-v4.png)
 
 ### Treiber
 
