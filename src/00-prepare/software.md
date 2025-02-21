@@ -28,10 +28,13 @@ Jedoch werden alle Beispiele in diesem Kurs mit Thonny gezeigt.
 ```
 
 
-## Wokwi – MicroPython im Browser ausprobieren  
+## Wokwi – MicroPython im Browser ausprobieren
 
 [Wokwi](https://wokwi.com) ist eine webbasierte Simulationsplattform für Mikrocontroller-Projekte. Damit kannst du ganz ohne zusätzliche Hardware MicroPython auf virtuellen Boards wie dem ESP32 oder Raspberry Pi Pico testen. Wokwi bietet dir die Möglichkeit, Schaltungen zu erstellen und deine MicroPython-Skripte direkt im Browser auszuführen. Einfach Board auswählen, Schaltkreis designen und deinen Code testen – ideal für schnelle Experimente oder das Lernen ohne physische Hardware.
 
 ~~~admonish task
-Gehe auf die wokwi webseite und schaue dir einige Beispielprojekte an.
+- Schauen Sie sich das Einführungsvideo an.
+- Gehe auf die wokwi webseite und schaue dir einige Beispielprojekte an.
 ~~~
+
+<iframe src="https://nbg6156-my.sharepoint.com/personal/jonas_malassa_rdf_nuernberg_de/_layouts/15/embed.aspx?UniqueId=cf195f9e-df40-4a62-b038-74a0ae632231&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="750" height="420" frameborder="0" scrolling="no" allowfullscreen title="Wokwi Intro"></iframe>
