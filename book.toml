@@ -21,6 +21,7 @@ aliases = ["todo", "do"]
 [preprocessor.admonish.directive.custom.solution]
 icon = "./task.svg"
 color = "#DAF7A6"
+title  = "Solution"
 aliases = ["sol", "lsg"]
 collapsible = true
 

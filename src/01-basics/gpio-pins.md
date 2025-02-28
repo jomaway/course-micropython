@@ -20,6 +20,14 @@ Hier sehen Sie das Pinout des ESP32 DevKitC V4.[^quelle pinout]
 
 ![ESP32 DevKit Pinout](./assets/esp32_devkitC_v4_pinlayout.png)
 
+~~~admonish warning title="Achtung! Manche Pins sollten Sie nicht verwenden!" collapsible=true
+Die folgende Tabelle zeigt, welche Pins sicher verwendet werden können und welche mit Vorsicht zu verwenden sind.
+
+{{#include gpio-pin-table.html }}
+
+Quelle: [lastminuteengineers](https://lastminuteengineers.com/esp32-pinout-reference/)
+
+~~~
 
 ## Pins nutzen
 
