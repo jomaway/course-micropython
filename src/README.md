@@ -1,6 +1,6 @@
 # Introduction
 
-Dieser Course ist bietet eine Einführung in Micropython und den ESP32.
+Dieser Kurs bietet eine Einführung in Micropython und den ESP32.
 
 Er besteht aus mehreren Modulen welche teilweise aufeinander aufbauen.
 Jedes Modul ist wiederum in mehrere LAB-Einheiten gegliedert.

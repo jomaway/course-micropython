@@ -32,7 +32,13 @@ while True:
     print(current_btn_state)
 ```
 
+Der Ausdruck `Pin.PULL_UP` aktiviert den internen Pullup-Widerstand des ESP32.
 
+Dadurch liegt ein HIGH-Pegel am Pin an, wenn der Taster nicht gedrückt ist und ein LOW-Pegel wenn der Taster gedrückt wird.
+
+~~~admonish warning
+Ein Taster sollte immer mit einem Pullup oder Pulldown Widerstand verwendet werden, da der Spannungszustand des Taster-Pins sonst nicht stabil ist und der Zustand des Eingangspings sich zufällig ändern kann.
+~~~
 
 ~~~admonish task
 Schreiben Sie ein Programm welches eine LED einschaltet solange der Taster gedrückt ist.
