@@ -115,7 +115,11 @@ while True:
   sleep(0.5)
 ```
 
-Verbinden Sie GPIO17 mit einer Drahtbrücke zu GND (0V) und VCC (3.3V). Welche Werte lesen Sie?
+Verbinden Sie GPIO17 mit einer Drahtbrücke zu
+- GND (0V) und anschließend
+- VCC (3.3V).
+
+Welche Werte lesen Sie jeweils?
 
 **WARNUNG:** Verbinden Sie den Pin **niemals** mit einer Eingangsspannung von 5V. Dies könnte den Pin oder den ganzen Chip zerstören.
 
