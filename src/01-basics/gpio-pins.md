@@ -122,13 +122,6 @@ Verbinden Sie GPIO17 mit einer Drahtbrücke zu
 Welche Werte lesen Sie jeweils?
 
 **WARNUNG:** Verbinden Sie den Pin **niemals** mit einer Eingangsspannung von 5V. Dies könnte den Pin oder den ganzen Chip zerstören.
-
-
-Zusatz:
-Nutzen Sie ein einstellbare Spannungsquelle von 0V bis 3.3V an GPIO17.
-Bei welcher Spannung, wechselt der Eingang von LOW zu HIGH, bzw. von HIGH zu LOW?
-
-Machen Sie mehrere Versuche und berechnen Sie den arithmetischen Mittelwert.
 ~~~
 
 ## Besondere Pins
