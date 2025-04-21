@@ -57,39 +57,18 @@ Dabei wird die analoge Spannung des Sensors über einen ADC (Analog-Digital-Wand
 
 ~~~admonish task
 - Nutzen Sie den ADC um die erzeugte Spannung des Moduls einzulesen.
-- Recherchieren Sie im Datenblatt wie die eingelesenen Werte in eine Entfernung umgerechnet werden können.
+- Recherchieren Sie im [Datenblatt](https://global.sharp/products/device/lineup/data/pdf/datasheet/gp2y0a51sk_e.pdf) wie die eingelesenen Werte in eine Entfernung umgerechnet werden können.
 ~~~
 
 ~~~admonish solution
 ```py
-from machine import ADC, Pin
-import time
-
-# ADC initialisieren (z.B. GPIO 34 beim ESP32)
-adc = ADC(Pin(34))
-
-def calc_distance(uv):
-    # convert microvolts to distance in cm
-    if uv < 300000 or uv > 2800000:
-            return None  # außerhalb des Messbereichs
-    try:
-        distance_cm = 2076000 / (uv - 11000)  # Werte in µV
-        return round(distance_cm, 1)
-    except ZeroDivisionError:
-        return None
-
-while True:
-    raw = adc.read_uv()
-    dist = calc_distance(uv)
-
-    print(f"Distance: {dist}")
-    time.sleep(0.5)
-
+{{#include ./code/ir.py}}
 ```
+
+Die Umrechung ist eine vereinfachte Näherung basierend auf typischen Werten aus dem Datenblatt. Für genauere Messungen empfiehlt sich eine individuelle Kalibrierung.
+
 ~~~
 
 ~~~admonish warning
-Die Umrechnungsformel ist eine vereinfachte Näherung basierend auf typischen Werten aus dem Datenblatt. Für genauere Messungen empfiehlt sich eine individuelle Kalibrierung.
-
 Der Sensor ist sehr empfindlich gegenüber Umgebungslicht und Oberflächenmaterialien.
 ~~~
