@@ -148,7 +148,7 @@ Schreiben Sie eine Funktion welche den Zustand eines Pins toggelt[^toggle].
 - Wie können Sie den Zustand eines Pins ändern(HIGH | LOW)?
 - Wie legen Sie einen Pin als Eingang fest?
 - Wie können Sie den Zustand eines Pins abfragen?
-- Ist es möglich den Zutand eines als Ausgang festgelegten Pins zu lesen?
+- Ist es möglich den Zustand eines als Ausgang festgelegten Pins zu lesen?
 - Ist es möglich den Zustand eines als Eingang festgelegten Pins auf HIGH | LOW zu setzten?
 
 
